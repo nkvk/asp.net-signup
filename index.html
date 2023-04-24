@@ -1,0 +1,672 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Main Page</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="main.js" rel="js"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/4.9.95/css/materialdesignicons.css" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        #button2
+        {
+            margin-left: 45%;
+            width:200px;
+            color:blue;
+            padding:5px 5px 5px 5px;
+        }
+            
+        }
+
+        .id:hover {
+            color: blue;
+        }
+
+        h3 {
+            margin-left: 30%;
+        }
+
+        
+        * {
+            box-sizing: border-box
+        }
+
+        body, html {
+            height: 100%;
+            margin: 0;
+            width: 100%;
+            font-family: Arial Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        
+        .topnav {
+            overflow: hidden;
+            background-color: blue;
+        }
+
+            .topnav a {
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration-color: blue;
+                font-size: 17px;
+            }
+
+                .topnav a:hover {
+                    background-color: blue;
+                    color: black;
+                }
+
+                .topnav a.active {
+                    background-color: blue;
+                    color: white;
+                }
+
+            .topnav .icon {
+                display: none;
+            }
+
+        @media screen and (max-width: 600px) {
+            .topnav a:not(:first-child) {
+                display: none;
+            }
+
+            .topnav a.icon {
+                float: right;
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav.responsive {
+                position: relative;
+            }
+
+                .topnav.responsive .icon {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+
+                .topnav.responsive a {
+                    float: none;
+                    display: block;
+                    text-align: left;
+                }
+        }
+        /*Footer*/
+        .footer {
+            background: black;
+            color: white;
+            height: 250px
+            
+        }
+        .container1{
+            background-color:black;
+            color:white;
+        }
+            
+       
+
+        .fa:hover {
+                opacity: 0.7;
+            }
+
+        body {
+            background-color: #f8f9fa !important;
+            margin-top: 20px;
+        }
+
+        .text-custom,
+        .navbar-custom .navbar-nav li a:hover,
+        .navbar-custom .navbar-nav li a:active,
+        .navbar-custom .navbar-nav li.active a,
+        .service-box .services-icon,
+        .price-features p i,
+        .faq-icon,
+        .social .social-icon:hover {
+            color: #f6576e !important;
+        }
+
+        .bg-custom,
+        .btn-custom,
+        .timeline-page .timeline-item .date-label-left::after,
+        .timeline-page .timeline-item .duration-right::after, .back-to-top:hover {
+            background-color: #f6576e;
+        }
+
+        .btn-custom,
+        .custom-form .form-control:focus,
+        .social .social-icon:hover,
+        .registration-input-box:focus {
+            border-color: #f6576e;
+        }
+
+        .service-box .services-icon,
+        .price-features p i {
+            background-color: rgba(246, 87, 110, 0.1);
+        }
+
+        .btn-custom:hover,
+        .btn-custom:focus,
+        .btn-custom:active,
+        .btn-custom.active,
+        .btn-custom.focus,
+        .btn-custom:active,
+        .btn-custom:focus,
+        .btn-custom:hover,
+        .open > .dropdown-toggle.btn-custom {
+            border-color: #e45267;
+            background-color: #e45267;
+        }
+
+
+        .price-box {
+            padding: 40px 50px;
+        }
+
+        .plan-price h1 span {
+            font-size: 16px;
+            color: #000;
+        }
+
+        .price-features p i {
+            height: 20px;
+            width: 20px;
+            display: inline-block;
+            text-align: center;
+            line-height: 20px;
+            font-size: 14px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        /*check mark container*/
+        .container {
+            display: inline-block;
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-size: 22px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            justify-items: center;
+        }
+            /* On mouse-over, add a grey background color */
+            .container:hover input ~ .checkmark {
+                background-color: #ccc;
+            }
+
+            /* When the radio button is checked, add a blue background */
+            .container input:checked ~ .checkmark {
+                background-color: #2196F3;
+            }
+
+        /* Create the indicator (the dot/circle - hidden when not checked) */
+        .checkmark:after {
+            content: "";
+            position: absolute;
+            display: block;
+        }
+
+        /* Show the indicator (dot/circle) when checked */
+        .container input:checked ~ .checkmark:after {
+            display: block;
+        }
+
+
+        /*Testimonials css*/
+        @import url("https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap");
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        button,
+        input,
+        select {
+            font-family: inherit;
+            font-size: 100%;
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        html {
+            font-size: 14px;
+        }
+
+        body {
+            color: #000;
+            font-family: "Shippori Antique", sans-serif;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+
+        .content-wrapper {
+            height: 100%;
+            width: 70%;
+            max-width: 100rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 5rem;
+        }
+
+        h1 {
+            margin-bottom: calc(0.7rem + 0.5vmin);
+            font-size: calc(2.3rem + 1vmin);
+        }
+
+        .blue-line {
+            height: 0.3rem;
+            width: 6rem;
+            background-color: rgb(79, 143, 226);
+            margin-bottom: calc(3rem + 2vmin);
+        }
+
+        .wrapper-for-arrows {
+            position: relative;
+            width: 70%;
+            border-radius: 2rem;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            overflow: hidden;
+            display: grid;
+            place-items: center;
+        }
+
+        .review-wrap {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: calc(2rem + 1vmin);
+            width: 100%;
+        }
+
+        #imgDiv {
+            border-radius: 50%;
+            width: calc(6rem + 4vmin);
+            height: calc(6rem + 4vmin);
+            position: relative;
+            box-shadow: 5px -3px rgb(79, 143, 226);
+            background-size: cover;
+            margin-bottom: calc(0.7rem + 0.5vmin);
+        }
+
+        
+
+        #imgDiv::after {
+            content: "''";
+            font-size: calc(2rem + 2vmin);
+            font-family: sans-serif;
+            line-height: 150%;
+            color: #fff;
+            display: grid;
+            place-items: center;
+            border-radius: 50%;
+            background-color: rgb(79, 143, 226);
+            position: absolute;
+            top: 10%;
+            left: -10%;
+            width: calc(2rem + 2vmin);
+            height: calc(2rem + 2vmin);
+        }
+
+        #personName {
+            margin-bottom: calc(0.7rem + 0.5vmin);
+            font-size: calc(1rem + 0.5vmin);
+            letter-spacing: calc(0.1rem + 0.1vmin);
+            font-weight: bold;
+        }
+
+        #profession {
+            font-size: calc(0.8rem + 0.3vmin);
+            margin-bottom: calc(0.7rem + 0.5vmin);
+            color: rgb(79, 143, 226);
+        }
+
+        #description {
+            font-size: calc(0.8rem + 0.3vmin);
+            width: 70%;
+            max-width: 40rem;
+            text-align: center;
+            margin-bottom: calc(1.4rem + 1vmin);
+            color: rgb(92, 92, 92);
+            line-height: 2rem;
+        }
+
+        .arrow-wrap {
+            position: absolute;
+            top: 50%;
+        }
+
+        .arrow {
+            width: calc(1.4rem + 0.6vmin);
+            height: calc(1.4rem + 0.6vmin);
+            border: solid rgb(79, 143, 226);
+            border-width: 0 calc(0.5rem + 0.2vmin) calc(0.5rem + 0.2vmin) 0;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+            .arrow:hover {
+                transition: 0.3s;
+                transform: scale(1.15);
+            }
+
+        .left-arrow-wrap {
+            left: 5%;
+            transform: rotate(135deg);
+            -webkit-transform: rotate(135deg);
+        }
+
+        .right-arrow-wrap {
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+            right: 5%;
+        }
+
+        
+        .move-head {
+            animation: moveHead 1.55s infinite;
+            animation-delay: -0.8s;
+        }
+
+        
+
+        @keyframes moveHead {
+            0% {
+            }
+
+            25% {
+                transform: translate(0.5rem, 1rem) rotate(5deg);
+            }
+
+            100% {
+                transform: translate(0, 0) rotate(-5deg);
+            }
+        }
+
+        @media screen and (max-width: 900px) {
+            .content-wrapper {
+                width: 100%;
+                text-align:center;
+                margin-left:50%;
+            }
+        }    
+    </style>
+
+</head>
+<body>
+    <form>
+        <div>
+            <img src="stock/980385239.png" alt="Image Description" />
+
+            <button style="float:right" value="Join Now"><a href="login.aspx">Join Now</a></button>
+
+            <select style="float:right">
+
+                <option value="English">English</option>
+                <option value="Arabic">Arabic</option>
+                <option value="German">German</option>
+                <option value="Spanish">Spanish</option>
+                <option value="Turkish">Turkish</option>
+                <option value="Japanish">Japanish</option>
+                <option value="Kannada">Kannada</option>
+                <option value="Malayalam">Malayalam</option>
+                <option value="Tamil">Tamil</option>
+                <option value="Telugu">Telugu</option>
+                <option value="Hindi">Hindi</option>
+                <option value="French">French</option>
+                <option value="Albanian">Albanian</option>
+                <option value="Afghani">Afghani</option>
+            </select>
+
+        </div>
+        <div class="body">
+
+            <img src="stock/home-hero-icon.png" style="height:150px;margin-left:45%" />
+        </div>
+        <div class="id">
+            <h1 style="text-align: center;">Best AI Content Writer</h1>
+        </div>
+        <h4 style="text-align: center;">
+            Create SEO-optimized and unique content for your blogs, ads, emails,
+            and <br>website 10X faster & save hours of work.
+        </h4>
+        <div id="button2">
+            <button>
+                <a href="signup.html">Get Started for Free</a>
+            </button><br />
+        </div>
+        <h4 style="text-align: center;">No Credit Card Required</h4>
+        <div>
+            <h2 style="text-align:center;height:100px;"><br /><br />How It Works?</h2>
+
+            <img src="stock/works.PNG" style="padding: 10px 2px 10px 2px;width:100%" />
+        </div>
+
+        <h2 style="text-align:center">
+            Template<br />
+            <br />Generate your required content with over 60+ content creation templates
+        </h2>
+        <div>
+            <br /><div class="topnav" id="myTopnav">
+                <a href="#All Templates" class="active">All Templates</a>
+                <a href="article.html" target="_parent">Articles and Blogs</a>
+                <a href="#Ads and Marketing Tool">Ads and Marketing Tool</a>
+                <a href="#General Writing">General Writing</a>
+                <a href="#Ecommerce">Ecommerce</a>
+                <a href="#Social Media">Social Media</a>
+                <a href="#Website">Website</a>
+                <a href="#Other">Other</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+
+
+        </div>
+        <section>
+
+        </section>
+
+        <br /><div class="container">
+            <div class="row justify-content-center text-center">
+                <input type="radio" checked="checked" name="radio">
+                Monthly
+                <label class="container">
+                    <span class="checkmark"></span>
+                </label>
+                <input type="radio" name="radio">
+                Yearly
+                <label class="container">
+                    <span class="checkmark"></span>
+                </label>
+                <input type="radio" name="radio">
+
+                Lifetime
+                <label class="container">
+                    <span class="checkmark"></span>
+                </label>
+
+                <div class="col-lg-12">
+                    <h2 class="font-weight-light" style="text-align:center"><br />Membership Plan</h2>
+
+                </div>
+                <div class="row" style="display:flex">
+                    <div class="col-lg-4">
+                        <div class="bg-white mt-3 price-box">
+                            <div class="pricing-name text-center">
+                                <h4 class="mb-0">Free Plan</h4>
+                            </div>
+                            <div class="plan-price text-center mt-4">
+                                <h1 class="text-custom font-weight-normal mb-0"><span>Free</span></h1>
+                            </div>
+                            <div class="price-features mt-5">
+                                <ul style="list-style-type:none;">
+                                    <li>Features of Free Plan<br /></li>
+                                    <li>32 AI Document Templates<br /></li>
+                                    <li>10,000 Words per month<br /></li>
+                                    <li>100 Images per month<br /></li>
+                                    <li>0 Speech to Text per month<br /></li>
+                                    <li>0 MB Audio file size limit<br /></li>
+                                </ul>
+                                <p><i class="mdi mdi-close"></i> AI Chat <span class="font-weight-bold">?</span></p>
+                                <p><i class="mdi mdi-close"></i> AI Code <span class="font-weight-bold">?</span></p>
+                                <p><i class="mdi mdi-check"></i>  Hide Ads <span class="font-weight-bold"></span></p>
+                                <p><i class="mdi mdi-close"></i> Free Setup <span class="font-weight-bold"></span></p>
+                                <p><i class="mdi mdi-close"></i> Free Support <span class="font-weight-bold"></span></p>
+                            </div>
+                            <div class="text-center mt-5">
+                                <a href="#" class="btn btn-custom text-white">Current Plan</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="bg-white mt-3 price-box">
+                            <div class="pricing-name text-center">
+                                <h4 class="mb-0">Trial Plan</h4>
+                            </div>
+                            <div class="plan-price text-center mt-4">
+                                <h1 class="text-custom font-weight-normal mb-0"><span>Trial</span></h1>
+                            </div>
+                            <div class="price-features mt-5">
+                                <ul style="list-style-type:none;">
+                                    <li>61 AI Document Templates<br /></li>
+                                    <li>50,000 Words per month<br /></li>
+                                    <li>500 Images per month<br /></li>
+                                    <li>0 Speech to Text per month<br /></li>
+                                    <li>0 MB Audio file size limit<br /></li>
+                                </ul>
+                                <p><i class="mdi mdi-close"></i> AI Chat <span class="font-weight-bold">?</span></p>
+                                <p><i class="mdi mdi-close"></i> AI Code <span class="font-weight-bold">?</span></p>
+                                <p><i class="mdi mdi-check"></i>  Hide Ads <span class="font-weight-bold"></span></p>
+                                <p><i class="mdi mdi-close"></i> Free Setup <span class="font-weight-bold"></span></p>
+                                <p><i class="mdi mdi-close"></i> Free Support <span class="font-weight-bold"></span></p>
+                            </div>
+                            <div class="text-center mt-5">
+                                <a href="#" class="btn btn-custom text-white">Upgrade</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="bg-white mt-3 price-box">
+                            <h4 class="mb-0">Recommended</h4>
+                            <div class="pricing-name text-center">
+                                <h4 class="mb-0">Extended Plan</h4>
+                            </div>
+                            <div class="plan-price text-center mt-4">
+                                <h1 class="text-custom font-weight-normal mb-0">5₹<span>/Month</span></h1>
+                            </div>
+                            <div class="price-features mt-5">
+                                <p><i class="mdi mdi-close"></i> AI Chat <span class="font-weight-bold">?</span></p>
+                                <p><i class="mdi mdi-close"></i> AI Code <span class="font-weight-bold">?</span></p>
+                                <p><i class="mdi mdi-check"></i>  Hide Ads <span class="font-weight-bold"></span></p>
+                                <p><i class="mdi mdi-check"></i> Free Setup <span class="font-weight-bold"></span></p>
+                                <p><i class="mdi mdi-check"></i> Free Support <span class="font-weight-bold"></span></p>
+                            </div>
+                            <div class="text-center mt-5">
+                                <a href="#" class="btn btn-custom text-white">Upgrade</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 style="text-align:center">Testimonials</h1>
+        <div class="content-wrapper">
+        <h2>Our Reviews</h2>
+
+        <div class="blue-line"></div>
+        <div class="wrapper-for-arrows">
+
+            <div id="reviewWrap" class="review-wrap">
+                <div id="imgDiv" class="">
+                </div>
+                <div id="personName"></div>
+                <div id="profession"></div>
+                <div id="description">
+                </div>
+            </div>
+            <div class="left-arrow-wrap arrow-wrap">
+                <div class="arrow" id="leftArrow"></div>
+            </div>
+            <div class="right-arrow-wrap arrow-wrap">
+                <div class="arrow" id="rightArrow"></div>
+            </div>
+        </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+        <script src="main.js"></script>
+        <footer>
+            <div class="container1">
+                <div class="row">
+                    <div class="col-12">
+
+                        <div class="col-md-6">
+                            <img src="stock/980385239.png" style="width:150px;height:100px;float:left" />
+                            <div class="col-md-4" style="text-align:right;display:flex;float:right;">
+                                <div class="col-md-4" style="display:flex;flex-direction:column">
+                                    My Account
+                                    <button><a href="login.aspx">Login</a></button><br />
+                                    <button><a href="signup.html">Register</a></button>
+                                </div>
+                                <div class="col-md-4" style="display:flex;flex-direction:column">
+                                    Helpful Links<br />
+                                    <button>Blog</button><br />
+                                    <button>Feedback</button><br />
+                                    <button>Contact</button><br />
+                                </div>
+                                <div class="col-md-4" style="display:flex;flex-direction:column">
+                                    Information<br />
+                                    <button>FAQ</button><br />
+                                    <button><a href="testimonials.html">Testimonials</a></button><br />
+                                </div>
+                            </div>
+                                <div class="col-md-4">
+                                    <p>
+                                        Aenean sodales mattis augue. Morbi euismod, felis at<br />
+                                        volutpat volutpat, quam lectus porttitor massa,<br />
+                                        tur ex a neque pulvinar pulvinar.<br />
+                                    </p>
+
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="col-md-4" style="text-align:left">
+                                        </br></br><hr /></br>&copy; 2023 Socius IGB Pvt Ltd, All right reserved
+                                        <div class="col-md-4" style="text-align:right">
+                                            <a href="https://www.facebook.com/" class="fa fa-facebook"></a>&nbsp;
+                                            &nbsp; <a href="https://twitter.com/" class="fa fa-twitter"></a>&nbsp;
+                                            &nbsp; <a href="https://www.instagram.com/" class="fa fa-instagram"></a>&nbsp;
+                                            &nbsp;<a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>&nbsp;
+                                            &nbsp; <a href="https://www.pinterest.com/" class="fa fa-pinterest"></a>&nbsp;
+                                            &nbsp;  <a href="https://www.youtube.com/" class="fa fa-youtube"></a>&nbsp;
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </form>
+</body>
+</html>
