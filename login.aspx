@@ -30,8 +30,7 @@
                     padding: 25px;
                     border: 1px solid white;
                 }
-
-          
+         
       .container {
             background: black;
             color: white;
